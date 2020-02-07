@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+
+    android:orientation="vertical"
+    android:background="@color/colorGrey">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="1dp"
+        android:weightSum="5"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+    <SearchView android:id="@+id/userFilter"
+        android:background="@drawable/light_grey_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:hint="Станция отправления.." />
+
+
+    <SearchView android:id="@+id/userFilter1"
+        android:background="@drawable/light_grey_color"
+        android:outlineSpotShadowColor="@color/yellow_color"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Станция назначения.." />
+
+            <TextView android:id="@+id/userText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow_color"
+                android:textSize="14dp"
+                android:hint="Станция отправления.." />
+
+            <TextView android:id="@+id/userText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow_color"
+                android:textSize="14dp"
+                android:hint="Станция назначения.." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="4"
+            android:gravity="right"
+
+            android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/add_fav"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_grade_green_24dp"
+            />
+
+            <ImageView
+                android:id="@+id/put_notification"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notifications_active_green_24dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+
+        android:gravity="left"
+        android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/searchList"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+
+</LinearLayout>
+
+</LinearLayout>
